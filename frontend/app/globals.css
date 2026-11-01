@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-aura text-ink antialiased;
+}
+
+* {
+  scrollbar-color: rgba(116, 224, 184, 0.35) transparent;
+}
+
+.glass-panel {
+  @apply rounded-3xl border border-white/10 bg-white/5 shadow-calm backdrop-blur-xl;
+}
+
+.pill {
+  @apply rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-mist;
+}
